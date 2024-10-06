@@ -4,10 +4,13 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
-    background-color: #F5F5F5;
 }
 
 /* para deixar mais suave na hora que rolar a página */
 html {
     scroll-behavior: smooth; 
     }
+
+body{
+    background-color: #F5F5F5;
+}
