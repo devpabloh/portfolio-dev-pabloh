@@ -92,6 +92,131 @@
     margin-bottom: 1em;
 }
 
+/* Skills */
+
+.container-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 118px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.card img{
+    width: 26px;
+    height: 37px;
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+/* Hobbies */
+
+.container-hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1em 0;
+}
+
+/* formação academica */
+
+#training{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF2FD;
+}
+
+.container-card-training{
+    width: 296px;
+    min-height: 150px;
+}
+
+.container-training-img{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 80px;
+}
+
+.container-training-img img{
+    width: 84px;
+    height: 58px;
+    object-fit: contain;
+}
+
+/* Projects */
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.container-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container-projects img{
+    width: 296px;
+}
+
+.list-projects{
+    padding-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.nav-projects ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1em;
+}
+
+.nav-projects ul li{
+    text-align: center;
+    width: 108px;
+    height: 40px;
+    
+}
+
+.nav-projects ul li a{
+    padding: 12px 16px;
+    background-color: black;
+    color: white;
+}
+
+
+
 
 
 /* Media Querys */
@@ -100,6 +225,25 @@
     .container-header-nav ul li:last-child{
         font-size: 16px;
     }
+
+    .container-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card{
+        width: 224px;
+    }
+
+    .container-training{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+
 }
 
 @media (min-width: 1440px){
@@ -121,6 +265,16 @@
         font-size: 1em;
     }
 
+    .container-cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 1em;
+    }
+
+    .card{
+        width: 174px;
+    }
 
 }
 
