@@ -175,6 +175,7 @@
     align-items: center;
     justify-content: center;
     gap: 1em;
+    margin: 1em 0;
 }
 
 .container-projects{
@@ -188,9 +189,17 @@
     width: 296px;
 }
 
+.container-projects div h3{
+    margin: .8em 0;
+}
+
 .list-projects{
     padding-left: 1.5em;
     margin-bottom: 1em;
+}
+
+.list-projects li {
+    margin-bottom: .5em;
 }
 
 .nav-projects ul{
@@ -200,13 +209,13 @@
     justify-content: space-between;
     list-style-type: none;
     gap: 1em;
+    margin-top: 1.5em;
 }
 
 .nav-projects ul li{
     text-align: center;
     width: 108px;
     height: 40px;
-    
 }
 
 .nav-projects ul li a{
@@ -215,7 +224,68 @@
     color: white;
 }
 
+/* Contato */
 
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 90%;
+}
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea{
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Footer */
+
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    margin-top: 1em;
+    height: 102px;
+}
 
 
 
@@ -243,6 +313,19 @@
         gap: 1em;
     }
 
+    .container-projects{
+        width: 704px;
+    }
+
+    .container-projects img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .contact-form{
+        width: 92%;
+    }
+
 
 }
 
@@ -255,6 +338,13 @@
         margin-right: .5em;
         padding: 0 1em;
         cursor: pointer;
+    }
+
+    .container-information-nav ul{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 2em;
     }
 
     #about h2{
@@ -275,6 +365,21 @@
     .card{
         width: 174px;
     }
+
+    #projects{
+        width: 100%;
+    }
+
+    .container-projects{
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-bottom: 1em;
+    }
+
+
 
 }
 
