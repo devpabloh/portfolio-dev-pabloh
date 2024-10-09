@@ -15,6 +15,10 @@
     font-weight: 700;
 }
 
+.container-header-logo h1 a{
+    color: #000;
+}
+
 .container-header-logo img{
     display: none;
 }
@@ -75,11 +79,6 @@
     margin-bottom: 1em;
 }
 
-.container-information {
-    font-family: 'Courier New', monospace; /* Fonte de máquina de escrever */
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
-}
 
 .cursor {
     display: inline-block;
@@ -92,6 +91,8 @@
     0%, 100% { background-color: transparent; }
     50% { background-color: black; }
 }
+
+
 
 .container-information p{
     font-size: 0.875em;
