@@ -12,3 +12,20 @@ document.getElementsByClassName("form").addEventListener('submit', function(even
     }
 
 })
+
+document.addEventListener('DOMContentLoaded', function(){
+    const text = "Olá, meu nome é Pablo Henrique e contruo páginas web."
+    const typingElement = document.getElementsByClassName("typing-effect")
+    let index = 0;
+
+    function type(){
+        if(index < text.length){
+            typingElement.textContent += text.charAt(index)
+            index++
+            setTimeout(type,100)
+        }else{
+            typingElement.innerHTML += `<span class="cursor"></span>`
+        }
+    }
+    type()
+})
