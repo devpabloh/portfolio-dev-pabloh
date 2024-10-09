@@ -73,20 +73,24 @@
 .container-information h2{
     font-size: 1.375em;
     margin-bottom: 1em;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
-.cursor{
+.container-information {
+    font-family: 'Courier New', monospace; /* Fonte de máquina de escrever */
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+}
+
+.cursor {
     display: inline-block;
     width: 10px;
-    background-color: #000;
-    animation: blink 0.7s infinite;
+    background-color: black;
+    animation: blink 0.7s infinite; /* Efeito de piscar */
 }
 
 @keyframes blink {
-    0%, 100%{background-color: transparent;}
-    50%{background-color: #000;}
+    0%, 100% { background-color: transparent; }
+    50% { background-color: black; }
 }
 
 .container-information p{
