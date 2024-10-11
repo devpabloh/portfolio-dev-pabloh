@@ -392,6 +392,41 @@ button:hover {
         gap: 2em;
     }
 
+    .styleLink {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 5px; /* Adicione um pouco de espaço ao redor do texto */
+    }
+    
+    .styleLink::before,
+    .styleLink::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: black;
+        transition: width 0.4s ease; /* Transição suave para a animação */
+    }
+    
+    .styleLink::before {
+        top: 0;           /* Borda superior */
+        left: 0;          /* Começa da esquerda */
+    }
+    
+    .styleLink::after {
+        bottom: 0;        /* Borda inferior */
+        right: 0;         /* Começa da direita */
+    }
+    
+    .styleLink:hover::before {
+        width: 100%;      /* Anima a borda superior da esquerda para a direita */
+    }
+    
+    .styleLink:hover::after {
+        width: 100%;      /* Anima a borda inferior da direita para a esquerda */
+    }
 
     #about h2{
         font-size: 2em;
