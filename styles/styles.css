@@ -37,13 +37,6 @@
     color: #000;
 }
 
-.container-header-nav ul li a:hover{
-    border-top: 4px solid black;
-    border-bottom: 4px solid black;
-}
-
-
-
 .container-header-nav ul li:last-child{
     display: inline-block;
     font-size: 14px;
@@ -397,6 +390,35 @@ button:hover {
         justify-content: flex-start;
         flex-direction: row;
         gap: 2em;
+    }
+
+    .container-header-nav ul li a{
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .container-header-nav ul li a::before, .container-header-nav ul li a::after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 4px;
+        background-color: black;
+        transition: width 0.4s ease;
+    }
+
+    .container-header-nav ul li a::before{
+        top: 0;
+        right: 0;
+    }
+
+    .container-header-nav ul li a::after{
+        width: 100%;
+        left: 0;
+    }
+
+    .container-header-nav ul li a:hover::after{
+        width: 100%;
+        right: 0;
     }
 
     #about h2{
