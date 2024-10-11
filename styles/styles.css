@@ -392,34 +392,6 @@ button:hover {
         gap: 2em;
     }
 
-    .container-header-nav ul li a{
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    .container-header-nav ul li a::before, .container-header-nav ul li a::after{
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 4px;
-        background-color: black;
-        transition: width 0.4s ease;
-    }
-
-    .container-header-nav ul li a::before{
-        top: 0;
-        right: 0;
-    }
-
-    .container-header-nav ul li a::after{
-        width: 100%;
-        left: 0;
-    }
-
-    .container-header-nav ul li a:hover::after{
-        width: 100%;
-        right: 0;
-    }
 
     #about h2{
         font-size: 2em;
